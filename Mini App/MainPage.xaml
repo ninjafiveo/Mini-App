@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mini_App.MainPage">
+    
+    <VerticalStackLayout Padding="20">
+        <Label Text="First Name" />
+        <Entry x:Name="FirstNameEntry" Placeholder="Enter first name" />
+
+        <Label Text="Last Name" />
+        <Entry x:Name="LastNameEntry" Placeholder="Enter last name" />
+
+        <Label Text="Street" />
+        <Entry x:Name="StreetEntry" Placeholder="Enter street" />
+
+        <Label Text="City" />
+        <Entry x:Name="CityEntry" Placeholder="Enter city" />
+
+        <Label Text="State" />
+        <Entry x:Name="StateEntry" Placeholder="Enter state" />
+
+        <Label Text="Zip" />
+        <Entry x:Name="ZipEntry" Placeholder="Enter zip code" />
+
+        <Label Text="Username" />
+        <Entry x:Name="UsernameEntry" Placeholder="Enter username" />
+
+        <Label Text="Password" />
+        <Entry x:Name="PasswordEntry" Placeholder="Enter password" IsPassword="True" />
+
+        <Label Text="Confirm Password" />
+        <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm password" IsPassword="True" />
+
+        <HorizontalStackLayout>
+            <Button Text="Submit" Clicked="OnSubmitClicked" />
+            <Button Text="Clear" Clicked="OnClearClicked" />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+
+</ContentPage>
